@@ -1,5 +1,5 @@
+LOCAL*
+terraform*
+.terraform*
 .terraform/
-terraform.tfvars
 tfplan
-terraform.tfstate
-terraform_backend.tf
