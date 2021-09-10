@@ -1,7 +1,7 @@
 ## Fraud Detection Using Machine Learning
 
 Setup end to end demo architecture for predicting fraud events with Machine Learning using `Amazon SageMaker` and `Terraform`.
-This repo supports the original article posted on [Medium](https://medium.com/@qtangs/machine-learning-infrastructure-with-amazon-sagemaker-and-terraform-a-case-of-fraud-detection-ab6896144781).
+This repo is a modified copy of the repo mentioned in the original article posted on [Medium](https://medium.com/@qtangs/machine-learning-infrastructure-with-amazon-sagemaker-and-terraform-a-case-of-fraud-detection-ab6896144781).
 
 ## Terraform
 To download `Terraform`, visit https://releases.hashicorp.com/terraform/
