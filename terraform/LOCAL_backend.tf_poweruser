@@ -1,0 +1,15 @@
+# This file will be automatically deleted by the codebuild project
+
+terraform {
+  backend "s3" {
+    key     = "default"
+    encrypt = true
+    # terraform 0.12.23 doesn't allow variables here, so we set this via the buildspec file
+    region               = "eu-central-1"
+    role_arn             = "arn:aws:iam::006266547701:role/PowerUser"
+    kms_key_id           = "arn:aws:kms:eu-central-1:006266547701:alias/devops/devops-shared-terraform-state-key"
+    dynamodb_table       = "merck-ics-devops-terraform-state-lock"
+    bucket               = "merck-ics-devops-terraform-state-storage"
+    workspace_key_prefix = "ics-test-al"
+  }
+}
