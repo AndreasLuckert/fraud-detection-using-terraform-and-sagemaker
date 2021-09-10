@@ -31,7 +31,7 @@ pip install --quiet ipykernel
 # Downloading the requirements.txt script from S3-Bucket/GitHub
 export AWS_PROFILE=${aws_profile}
 aws s3 cp 's3://${s3_bucket_on_start_and_create_lifecycle_scripts}/requirements.txt' requirements.txt
-# wget https://raw.githubusercontent.com/andreasluckert/aws-sm-notebook-instance/main/scripts/requirements.txt
+# wget https://raw.githubusercontent.com/andreasluckert/fraud-detection-using-terraform-and-sagemaker/master/terraform/template/requirements.txt
 
 # Installing the Python libraries listed in the requirements.txt script
 pip install --quiet -r requirements.txt

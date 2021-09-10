@@ -16,7 +16,7 @@ echo "Fetching the autostop script..."
 export AWS_PROFILE=${aws_profile}
 aws s3 cp 's3://${s3_bucket_on_start_and_create_lifecycle_scripts}/autostop.py' autostop.py
 # aws s3 cp s3://sm-on-start-and-create-lifecycle-scripts/autostop.py autostop.py
-# wget https://raw.githubusercontent.com/andreasluckert/aws-sm-notebook-instance/main/scripts/autostop.py
+# wget https://raw.githubusercontent.com/andreasluckert/fraud-detection-using-terraform-and-sagemaker/master/terraform/template/autostop.py
 
 # Using crontab to autostop the notebook when idle time is breached
 echo "Starting the SageMaker autostop script in cron."
